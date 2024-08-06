@@ -1,87 +1,98 @@
+/* Add your CSS styles here */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-nav {
+header .logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+header .name {
+    margin-left: 10px;
 }
 
-.logo {
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul {
-    list-style: none;
+.navbar {
     display: flex;
+    justify-content: center;
 }
 
-nav ul li {
-    margin-left: 20px;
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li a {
+.navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 20px 0;
-}
-
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 20px 0;
-}
-
-.card {
-    background: #fff;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.card h3 a {
-    color: #333;
-    text-decoration: none;
-}
-
-.card h3 a:hover {
-    text-decoration: underline;
-}
-
-footer {
+.hero {
+    position: relative;
+    height: 100vh;
     background: #333;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+}
+
+.hero .content {
+    z-index: 10;
+}
+
+.hero .image {
+    position: absolute;
     bottom: 0;
-    width: 100%;
+    right: 0;
+}
+
+.about {
+    padding: 60px 20px;
+}
+
+.about .image {
+    float: left;
+    margin-right: 20px;
+}
+
+.skills, .education, .work, .experience, .contact {
+    padding: 60px 20px;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .box {
+    margin: 20px;
 }
