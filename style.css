@@ -1,0 +1,89 @@
+/* style.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #007BFF;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form label,
+#contact form input,
+#contact form textarea,
+#contact form button {
+    margin: 5px 0;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#contact form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
