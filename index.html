@@ -4,88 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Komal Rani Kar's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="profile-pic.jpg" alt="Komal Rani Kar" class="profile-pic">
-        <h1>Komal Rani Kar</h1>
-        <p>Email: <a href="mailto:komalranikar2112@gmail.com">komalranikar2112@gmail.com</a></p>
-        <p>Phone: 7869462848</p>
-        <p>Location: Kirandul, Chhattisgarh</p>
         <nav>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
+            <div class="container">
+                <a href="#home" class="logo">Komal Rani Kar</a>
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    
+
+    <section id="home">
+        <div class="container">
+            <img src="profile-pic.jpg" alt="Komal Rani Kar" class="profile-pic">
+            <h1>Komal Rani Kar</h1>
+            <p>Email: <a href="mailto:komalranikar2112@gmail.com">komalranikar2112@gmail.com</a></p>
+            <p>Phone: 7869462848</p>
+            <p>Location: Kirandul, Chhattisgarh</p>
+        </div>
+    </section>
+
     <main>
         <section id="education">
-            <h2>Education</h2>
-            <p><strong>GITAM Vishakhapatnam, Andhra Pradesh</strong></p>
-            <p>B.Tech in Computer Science and Engineering (Oct 2021 - Apr 2025)</p>
-            <p>CGPA: 9.49</p>
-
-            <p><strong>Kendriya Vidyalaya Kirandul, Chhattisgarh</strong></p>
-            <p>Intermediate (Jun 2019 - Jul 2021)</p>
-            <p>Percentage: 87.60%</p>
-
-            <p><strong>Prakash Vidyalaya Kirandul, Chhattisgarh</strong></p>
-            <p>ICSE 10th (Jun 2018 - May 2019)</p>
-            <p>Percentage: 82.10%</p>
+            <div class="container">
+                <h2>Education</h2>
+                <div class="card">
+                    <h3>GITAM Vishakhapatnam, Andhra Pradesh</h3>
+                    <p>B.Tech in Computer Science and Engineering (Oct 2021 - Apr 2025)</p>
+                    <p>CGPA: 9.49</p>
+                </div>
+                <div class="card">
+                    <h3>Kendriya Vidyalaya Kirandul, Chhattisgarh</h3>
+                    <p>Intermediate (Jun 2019 - Jul 2021)</p>
+                    <p>Percentage: 87.60%</p>
+                </div>
+                <div class="card">
+                    <h3>Prakash Vidyalaya Kirandul, Chhattisgarh</h3>
+                    <p>ICSE 10th (Jun 2018 - May 2019)</p>
+                    <p>Percentage: 82.10%</p>
+                </div>
+            </div>
         </section>
 
         <section id="experience">
-            <h2>Experience</h2>
-            <p><strong>NMDC | Summer Intern</strong></p>
-            <p>Kirandul, Chhattisgarh | May 2024 - Jun 2024</p>
-            <ul>
-                <li>Worked as a Python Intern in the C & IT Department.</li>
-                <li>Key learnings included automation of data processing, full-stack web development, and enhancing user experience through intuitive design.</li>
-                <li>Gained hands-on experience with Python, Flask, HTML, CSS, and JavaScript.</li>
-            </ul>
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="card">
+                    <h3>NMDC | Summer Intern</h3>
+                    <p>Kirandul, Chhattisgarh | May 2024 - Jun 2024</p>
+                    <ul>
+                        <li>Worked as a Python Intern in the C & IT Department.</li>
+                        <li>Key learnings included automation of data processing, full-stack web development, and enhancing user experience through intuitive design.</li>
+                        <li>Gained hands-on experience with Python, Flask, HTML, CSS, and JavaScript.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> Python, Java, C, HTML, CSS</li>
-                <li><strong>Libraries/Frameworks:</strong> Flask, Streamlit, JavaScript</li>
-                <li><strong>Tools/Platforms:</strong> VS Code, Replit, Jupyter Notebook, GitHub</li>
-                <li><strong>Databases:</strong> SQL, RDBMS</li>
-            </ul>
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="card">
+                    <h3>Programming Languages</h3>
+                    <p>Python, Java, C, HTML, CSS</p>
+                </div>
+                <div class="card">
+                    <h3>Libraries/Frameworks</h3>
+                    <p>Flask, Streamlit, JavaScript</p>
+                </div>
+                <div class="card">
+                    <h3>Tools/Platforms</h3>
+                    <p>VS Code, Replit, Jupyter Notebook, GitHub</p>
+                </div>
+                <div class="card">
+                    <h3>Databases</h3>
+                    <p>SQL, RDBMS</p>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Projects / Open-Source</h2>
-            <p><strong><a href="#">Take Home Pay Extractor</a></strong> - Python, Pandas, Regex</p>
-            <p>Engineered an Employee Salary Extractor application to automate parsing of salary data for over 1500 employees. Reduced manual verification time for the finance department by 70%.</p>
-
-            <p><strong><a href="#">2024 Election Dashboard: An Analytical Perspective on Results and Trends</a></strong> - Streamlit, Pandas, Plotly</p>
-            <p>Developed an interactive election results dashboard using Streamlit, integrated with Pandas and Plotly for data visualization and analysis. Enabled users to explore 2024 election results by state, constituency, and party.</p>
+            <div class="container">
+                <h2>Projects / Open-Source</h2>
+                <div class="card">
+                    <h3><a href="#">Take Home Pay Extractor</a></h3>
+                    <p>Python, Pandas, Regex</p>
+                    <p>Engineered an Employee Salary Extractor application to automate parsing of salary data for over 1500 employees. Reduced manual verification time for the finance department by 70%.</p>
+                </div>
+                <div class="card">
+                    <h3><a href="#">2024 Election Dashboard</a></h3>
+                    <p>Streamlit, Pandas, Plotly</p>
+                    <p>Developed an interactive election results dashboard using Streamlit, integrated with Pandas and Plotly for data visualization and analysis. Enabled users to explore 2024 election results by state, constituency, and party.</p>
+                </div>
+            </div>
         </section>
 
         <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Fundamentals of C Programming - Faceprep</li>
-                <li>Python Masterclass 2024 - Udemy</li>
-                <li>Certificate of Virtual Python Programming Internship Completion - CodSoft</li>
-                <li>SQL (Basic) - HackerRank</li>
-                <li>PCAP: Programming Essentials in Python - OPENEDG</li>
-                <li>What is Data Science? - Coursera</li>
-                <li>Everyday Excel - Coursera</li>
-            </ul>
+            <div class="container">
+                <h2>Certifications</h2>
+                <div class="card">
+                    <ul>
+                        <li>Fundamentals of C Programming - Faceprep</li>
+                        <li>Python Masterclass 2024 - Udemy</li>
+                        <li>Certificate of Virtual Python Programming Internship Completion - CodSoft</li>
+                        <li>SQL (Basic) - HackerRank</li>
+                        <li>PCAP: Programming Essentials in Python - OPENEDG</li>
+                        <li>What is Data Science? - Coursera</li>
+                        <li>Everyday Excel - Coursera</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Komal Rani Kar</p>
+        <div class="container">
+            <p>&copy; 2024 Komal Rani Kar</p>
+        </div>
     </footer>
-    
+
     <script src="scripts.js"></script>
 </body>
 </html>
